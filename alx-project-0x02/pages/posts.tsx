@@ -3,6 +3,7 @@ import Head from "next/head";
 import type { GetStaticProps } from "next";
 import PostCard from "../components/common/PostCard";
 import type { PostProps } from "../interfaces";
+import Header from "@/components/layout/Header";
 
 type Props = { posts: PostProps[] };
 
@@ -34,6 +35,7 @@ export default function PostsPage({ posts }: Props) {
       <Head>
         <title>Posts | ALX Project 0x02</title>
       </Head>
+      <Header />
 
       <main className="mx-auto max-w-5xl p-6">
         <h1 className="text-2xl font-semibold">Posts</h1>

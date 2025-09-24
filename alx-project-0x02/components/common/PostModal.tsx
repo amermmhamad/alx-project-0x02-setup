@@ -71,7 +71,7 @@ const PostModal: React.FC<PostModalProps> = ({ isOpen, onClose, onSubmit }) => {
               type="button"
               onClick={onClose}
             >
-              cancel
+              Cancel
             </button>
             <button
               type="submit"

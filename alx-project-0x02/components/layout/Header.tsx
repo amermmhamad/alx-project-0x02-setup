@@ -23,6 +23,10 @@ export default function Header() {
               Posts
             </Link>
           </li>
+          <li>
+            <Link href="/users" className="hover:underline">
+            Users</Link>
+          </li>
         </ul>
       </nav>
     </header>
