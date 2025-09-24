@@ -12,7 +12,7 @@ const UserCard: React.FC<UserProps> = ({ id, name, username, email, address, pho
                 {[ address.suite, address.street, address.city, address.zipcode ]}
             </p>
             <p className="mt-2 text-sm text-gray-50-">{phone}</p>
-            <p className="mt-2 text-sm text-gray-50- hover:underline">{website}</p>
+            <p className="mt-2 text-sm text-gray-50- hover:underline hover:text-blue-500">{website}</p>
         </article>
     )
 }

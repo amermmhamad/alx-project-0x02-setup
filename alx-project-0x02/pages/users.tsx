@@ -16,12 +16,12 @@ type ApiUser = {
     website: string;
 };
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export async function getStaticProps() {
     try {
         const res = await fetch ("https://jsonplaceholder.typicode.com/users");
         const data: ApiUser[] = await res.json();
 
-        const users: UserProps[] = data.map((u) => ({
+        const users: UserProps[] = data.map((u: any) => ({
             name: u.name,
             username: u.username,
             email: u.email,
